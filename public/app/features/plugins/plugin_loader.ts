@@ -13,6 +13,8 @@ import * as datemath from 'app/core/utils/datemath';
 import * as fileExport from 'app/core/utils/file_export';
 import * as flatten from 'app/core/utils/flatten';
 import * as ticks from 'app/core/utils/ticks';
+import * as event_manager from 'app/features/annotations/event_manager';
+import colors from 'app/core/utils/colors';
 import impressionSrv from 'app/core/services/impression_srv';
 import builtInPlugins from './built_in_plugins';
 import * as d3 from 'd3';
@@ -88,6 +90,8 @@ exposeToPlugin('app/core/utils/file_export', fileExport);
 exposeToPlugin('app/core/utils/flatten', flatten);
 exposeToPlugin('app/core/utils/kbn', kbn);
 exposeToPlugin('app/core/utils/ticks', ticks);
+exposeToPlugin('app/core/utils/colors', colors);
+exposeToPlugin('app/features/annotations/event_manager', event_manager);
 
 exposeToPlugin('app/core/config', config);
 exposeToPlugin('app/core/time_series', TimeSeries);
